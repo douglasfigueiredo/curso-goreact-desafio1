@@ -15,8 +15,12 @@ const Post = ({
   </div>
 );
 
+Post.defaultProps = {
+  avatar: 'http://www.ipgg.ru/sites/default/files/default_images/avatar.png',
+};
+
 Post.propTypes = {
-  avatar: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
