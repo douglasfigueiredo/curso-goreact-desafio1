@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const PostHeader = ({ avatar, name, time }) => (
   <div className="post-header">
@@ -16,8 +16,10 @@ const PostHeader = ({ avatar, name, time }) => (
   </div>
 );
 
-// PostHeader.propTypes = {
-//   children: PropTypes.string.isRequired,
-// };
+PostHeader.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+};
 
 export default PostHeader;

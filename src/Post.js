@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 import PostHeader from './PostHeader';
 
 const Post = ({
@@ -12,5 +14,12 @@ const Post = ({
     </div>
   </div>
 );
+
+Post.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
 
 export default Post;
